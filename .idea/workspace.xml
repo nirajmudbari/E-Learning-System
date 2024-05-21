@@ -7,6 +7,8 @@
     <list default="true" id="02103603-97d5-43d1-8d88-5e7e95da5eb9" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/test/java/GradeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/Grade.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,7 @@
       <recent name="C:\Users\niraa\IdeaProjects\UserManagementSubsystem\src\main\java\org\usermanagement\interface" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GradeTest">
+  <component name="RunManager" selected="JUnit.UserAccountTest">
     <configuration name="GradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserManagementSubsystem" />
       <option name="PACKAGE_NAME" value="" />
@@ -97,6 +99,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserManagementSubsystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserAccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserManagementSubsystem" />
       <option name="PACKAGE_NAME" value="" />
@@ -106,28 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UserManagementSubsystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.usermanagement.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.usermanagement.model" />
-      <option name="MAIN_CLASS_NAME" value="org.usermanagement.model.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserAccountTest" />
         <item itemvalue="JUnit.GradeTest" />
         <item itemvalue="JUnit.GradeTest.testGetGradeByUser" />
         <item itemvalue="JUnit.PaymentTest" />
         <item itemvalue="JUnit.UserTest (1)" />
-        <item itemvalue="JUnit.UserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +143,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716271271897</updated>
-      <workItem from="1716271272974" duration="3550000" />
+      <workItem from="1716271272974" duration="3875000" />
     </task>
     <servers />
   </component>

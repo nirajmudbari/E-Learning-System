@@ -10,6 +10,14 @@ public class UserAccount extends User {
         this.userStatus = userStatus;
         this.balance = 500; // Initialize balance to 0
     }
+
+    public float getBalance() {
+        return balance;
+    }
+
+    public void setBalance(float balance) {
+        this.balance = balance;
+    }
     // Getters and setters
     public String getUserStatus() {
         return userStatus;
@@ -28,12 +36,6 @@ public class UserAccount extends User {
         userAccount.setUserStatus("Inactive");
     }
 
-    public float getBalance() {
-        return balance;
-    }
 
-    public void setBalance(float balance) {
-        this.balance = balance;
-    }
 }
 
