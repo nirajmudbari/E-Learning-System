@@ -79,7 +79,6 @@ public class UserManagementSystem {
         users.put(email, newUser);
         saveUserToFile(newUser); // Save new user to file
         System.out.println("User signed up successfully! User ID: " + userId);
-
         scanner.nextLine(); // Consume newline
     }
 
@@ -210,7 +209,6 @@ public class UserManagementSystem {
 
     private void accessDashboard() {
         System.out.println("Accessing dashboard...");
-        // Your dashboard logic here
     }
 
     private void exit() {
@@ -312,8 +310,7 @@ public class UserManagementSystem {
         }
     }
 
-// Dummy methods for new functionalities
-//
+    // Dummy methods for new functionalities
     private void viewGrades() {
         System.out.println("Viewing grades...");
         Grade grade = new Grade("G123", loggedInUser.getUserId(), "C101", "A");
