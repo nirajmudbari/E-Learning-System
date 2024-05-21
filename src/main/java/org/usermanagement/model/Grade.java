@@ -18,6 +18,38 @@ public class Grade {
     public Grade() {
     }
 
+    public String getGradeId() {
+        return gradeId;
+    }
+
+    public void setGradeId(String gradeId) {
+        this.gradeId = gradeId;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getCourseId() {
+        return courseId;
+    }
+
+    public void setCourseId(String courseId) {
+        this.courseId = courseId;
+    }
+
+    public String getGrade() {
+        return grade;
+    }
+
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
+
     public void getGradeByUser() {
         System.out.println("Getting grade for user: " + userId);
         System.out.println("Grade ID: " + gradeId + ", Course ID: " + courseId + ", Grade: " + grade);
