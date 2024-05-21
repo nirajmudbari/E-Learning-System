@@ -1,7 +1,7 @@
 package org.usermanagement.model;
 
 import org.usermanagement.util.UniqueIdGenerator;
-import org.usermanagement.util.Utils;
+import org.usermanagement.util.Pattern;
 
 import java.io.*;
 import java.util.Date;
@@ -101,7 +101,7 @@ public class UserManagementSystem {
             }
             if (user.login(email, password)) {
                 loggedInUser = user;
-                Utils.drawPattern();
+                Pattern.drawPattern();
                 System.out.println("Login successful! Welcome, " + user.getFullname() + "!");
                 return true;
             } else {

@@ -10,7 +10,6 @@ public class UserAccount extends User {
         this.userStatus = userStatus;
         this.balance = 500; // Initialize balance to 0
     }
-
     // Getters and setters
     public String getUserStatus() {
         return userStatus;

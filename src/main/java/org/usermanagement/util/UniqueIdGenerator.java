@@ -1,7 +1,6 @@
 package org.usermanagement.util;
 
 public class UniqueIdGenerator {
-
     private static long lastId = 0;
 
     public static synchronized String generateId() {

@@ -1,6 +1,6 @@
 package org.usermanagement.util;
 
-public class Utils {
+public class Pattern {
 
     public static void drawPattern() {
         int n = 5;

@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02103603-97d5-43d1-8d88-5e7e95da5eb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/Enrolment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/Grade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/util/UniqueIdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/util/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/users.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/util/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/util/Pattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/util/UniqueIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/util/UniqueIdGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +37,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/niraa/IdeaProjects/UserManagementSubsystem/src/main/resources",
     "node.js.detected.package.eslint": "true",
@@ -72,6 +59,22 @@
       <recent name="C:\Users\niraa\IdeaProjects\UserManagementSubsystem\src\main\java\org\usermanagement\interface" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="EnrolmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserManagementSubsystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EnrolmentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EnrolmentTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716271271897</updated>
-      <workItem from="1716271272974" duration="1063000" />
+      <workItem from="1716271272974" duration="1804000" />
     </task>
     <servers />
   </component>
