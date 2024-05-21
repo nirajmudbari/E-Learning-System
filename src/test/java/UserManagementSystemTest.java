@@ -9,6 +9,8 @@ import java.io.*;
 
 import static org.junit.Assert.*;
 
+//	Try to cover unit tests for all the other features inside UserManagementSystem.
+
 public class UserManagementSystemTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;

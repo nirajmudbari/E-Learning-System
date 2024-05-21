@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02103603-97d5-43d1-8d88-5e7e95da5eb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserManagementSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/users.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EnrolmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EnrolmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserManagementSystemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716271271897</updated>
-      <workItem from="1716271272974" duration="14559000" />
+      <workItem from="1716271272974" duration="14776000" />
     </task>
     <servers />
   </component>
