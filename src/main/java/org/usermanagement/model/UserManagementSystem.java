@@ -25,6 +25,7 @@ public class UserManagementSystem {
     }
 
     // Singleton getInstance method
+    // (Review Comment)	Ensure the singleton pattern is correctly implemented, to prevent multiple instances in multi-threaded environment.
     public static synchronized UserManagementSystem getInstance() throws IOException {
         if (instance == null) {
             instance = new UserManagementSystem();
@@ -43,8 +44,9 @@ public class UserManagementSystem {
         String email = scanner.nextLine();
 
         // Check if user with the same email already exists
+        //(Review Comment)	Provide more descriptive error messages to the user.
         if (users.containsKey(email)) {
-            System.out.println("User with this email already exists.");
+            System.out.println("User with this email already exists, can you please sign up with different email");
             return; // Exit sign-up process
         }
 
@@ -107,7 +109,8 @@ public class UserManagementSystem {
                 System.out.println("Incorrect password. Please try again.");
             }
         } else {
-            System.out.println("User with this email does not exist.");
+//            (Review Comments) Provide more descriptive error messages to the user.
+            System.out.println("User with this email does not exist, Can you please try again with your valid credentials.");
         }
         return false;
     }
