@@ -4,10 +4,7 @@ import org.usermanagement.util.UniqueIdGenerator;
 import org.usermanagement.util.Pattern;
 
 import java.io.*;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class UserManagementSystem {
 
@@ -20,7 +17,17 @@ public class UserManagementSystem {
     private UserManagementSystem() throws IOException {
         loggedInUser = null;
         users = new HashMap<>();
-        userFile = new File("./src/main/resources/users.txt");
+
+        // Load properties from application.properties file
+        // (Review Comment) Try to avoid hard coded file path, it will be hard to manage later.
+        Properties properties = new Properties();
+        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream("application.properties")) {
+            properties.load(inputStream);
+        }
+
+        // Get user file path from properties
+        String userFilePath = properties.getProperty("user.file.path");
+        userFile = new File(userFilePath);
         loadUsersFromFile(); // Load existing users from file when the system starts
     }
 

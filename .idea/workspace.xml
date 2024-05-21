@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02103603-97d5-43d1-8d88-5e7e95da5eb9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +72,7 @@
       <recent name="C:\Users\niraa\IdeaProjects\UserManagementSubsystem\src\main\java\org\usermanagement\interface" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserManagementSystemTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.usermanagement.Main" />
       <module name="UserManagementSubsystem" />
@@ -121,10 +123,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserManagementSystemTest" />
         <item itemvalue="JUnit.test in UserManagementSubsystem" />
         <item itemvalue="JUnit.EnrolmentTest" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserAccountTest" />
       </list>
     </recent_temporary>
@@ -145,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716271271897</updated>
-      <workItem from="1716271272974" duration="15027000" />
+      <workItem from="1716271272974" duration="15734000" />
     </task>
     <servers />
   </component>
