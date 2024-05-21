@@ -1,0 +1,5 @@
+1716077598651,aaa,aaa@gmail.com,aaa,8546584,STUDENT,Active
+1716073589075,Niraj Mudbari,niraj@gmail.com,niraj,0403242968,STUDENT,Active
+1716088678626,nirvi mudbari,nirvi@gmail.com,nirvi,4545456,STUDENT,Active
+1716077516340,faadsf,asdf@gmail.com,asdf,1254,STUDENT,Active
+1716077643545,bbb,bbb@gmail.com,bbb,546488,LECTURER,Active
