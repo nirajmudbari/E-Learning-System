@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02103603-97d5-43d1-8d88-5e7e95da5eb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/util/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/util/Pattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/util/UniqueIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/util/UniqueIdGenerator.java" afterDir="false" />
-    </list>
+    <list default="true" id="02103603-97d5-43d1-8d88-5e7e95da5eb9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,6 +35,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
+    "JUnit.EnrolmentTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -59,7 +60,7 @@
       <recent name="C:\Users\niraa\IdeaProjects\UserManagementSubsystem\src\main\java\org\usermanagement\interface" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UserTest (1)">
     <configuration name="EnrolmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserManagementSubsystem" />
       <option name="PACKAGE_NAME" value="" />
@@ -69,8 +70,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserManagementSubsystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserManagementSubsystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.usermanagement.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.usermanagement.model" />
+      <option name="MAIN_CLASS_NAME" value="org.usermanagement.model.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest (1)" />
+        <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.EnrolmentTest" />
       </list>
     </recent_temporary>
@@ -91,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716271271897</updated>
-      <workItem from="1716271272974" duration="1804000" />
+      <workItem from="1716271272974" duration="2110000" />
     </task>
     <servers />
   </component>
