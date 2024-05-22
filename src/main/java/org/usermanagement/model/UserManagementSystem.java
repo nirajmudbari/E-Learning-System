@@ -31,6 +31,12 @@ public class UserManagementSystem {
         loadUsersFromFile(); // Load existing users from file when the system starts
     }
 
+    // Method to set the user file path (for testing purposes)
+    public void setUserFilePath(String userFilePath) {
+        this.userFile = new File(userFilePath);
+        // Reload users from the new file path
+    }
+
     // Singleton getInstance method
     // (Review Comment)	Ensure the singleton pattern is correctly implemented, to prevent multiple instances in multi-threaded environment.
     public static synchronized UserManagementSystem getInstance() throws IOException {

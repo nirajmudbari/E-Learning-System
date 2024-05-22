@@ -1,7 +1,6 @@
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.usermanagement.model.UserManagementSystem;
 
@@ -9,21 +8,34 @@ import java.io.*;
 
 import static org.junit.Assert.*;
 
-//	Try to cover unit tests for all the other features inside UserManagementSystem.
+// Try to cover unit tests for all the other features inside UserManagementSystem.
 
 public class UserManagementSystemTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
+    private File tempUserFile;
     UserManagementSystem userManagementSystem;
 
     @Before
-    public void setUpStreams() {
+    public void setUpStreams() throws IOException {
         System.setOut(new PrintStream(outContent));
+
+        // Create a temporary user file for testing
+        tempUserFile = File.createTempFile("users", ".txt");
+        userManagementSystem = UserManagementSystem.getInstance();
+
+        // Redirect the user file path to the temporary file
+        userManagementSystem.setUserFilePath(tempUserFile.getAbsolutePath());
     }
 
     @After
     public void restoreStreams() {
         System.setOut(originalOut);
+
+        // Delete the temporary user file after the test
+        if (tempUserFile.exists()) {
+            tempUserFile.delete();
+        }
     }
 
     @Test
@@ -35,7 +47,6 @@ public class UserManagementSystemTest {
         System.setIn(in);
 
         // Call signUp method
-        userManagementSystem = UserManagementSystem.getInstance();
         userManagementSystem.signUp();
 
         // Check if the output contains success message
@@ -49,7 +60,6 @@ public class UserManagementSystemTest {
         String signUpInput = "Jane Doe\njane@example.com\npassword456\n0987654321\n2\n";
         InputStream signUpIn = new ByteArrayInputStream(signUpInput.getBytes());
         System.setIn(signUpIn);
-        userManagementSystem = UserManagementSystem.getInstance();
 
         userManagementSystem.signUp();
 
@@ -69,7 +79,6 @@ public class UserManagementSystemTest {
         String signUpInput = "Charlie Green\ncharlie@example.com\npassword111\n4455667788\n1\n";
         InputStream signUpIn = new ByteArrayInputStream(signUpInput.getBytes());
         System.setIn(signUpIn);
-        userManagementSystem = UserManagementSystem.getInstance();
 
         userManagementSystem.signUp();
 

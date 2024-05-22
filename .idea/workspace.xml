@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02103603-97d5-43d1-8d88-5e7e95da5eb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserManagementSystemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2glTfrB9gMUYr9WDh9xMULUoAe4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -35,35 +35,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "JUnit.EnrolmentTest.executor": "Run",
-    "JUnit.GradeTest.executor": "Run",
-    "JUnit.GradeTest.testGetGradeByUser.executor": "Run",
-    "JUnit.PaymentTest.executor": "Run",
-    "JUnit.UserAccountTest.executor": "Run",
-    "JUnit.UserManagementSystemTest.executor": "Run",
-    "JUnit.UserTest (1).executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "JUnit.test in UserManagementSubsystem.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/niraa/IdeaProjects/UserManagementSubsystem/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EnrolmentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GradeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GradeTest.testGetGradeByUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PaymentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserAccountTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserManagementSystemTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserManagementSystemTest.testLogoutWhenUserIsLoggedIn.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserManagementSystemTest.testSignUpWithValidInput.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.test in UserManagementSubsystem.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/niraa/OneDrive/Desktop/webjobconnectbackend-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\niraa\IdeaProjects\UserManagementSubsystem\src\main\resources" />
@@ -86,29 +88,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnrolmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UserManagementSubsystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EnrolmentTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UserManagementSubsystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserAccountTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserManagementSystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserManagementSubsystem" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserManagementSystemTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserManagementSystemTest.testLogoutWhenUserIsLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserManagementSubsystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserManagementSystemTest" />
+      <option name="METHOD_NAME" value="testLogoutWhenUserIsLoggedIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserManagementSystemTest.testSignUpWithValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UserManagementSubsystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserManagementSystemTest" />
+      <option name="METHOD_NAME" value="testSignUpWithValidInput" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,10 +128,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.UserManagementSystemTest" />
         <item itemvalue="JUnit.test in UserManagementSubsystem" />
-        <item itemvalue="JUnit.EnrolmentTest" />
-        <item itemvalue="JUnit.UserAccountTest" />
+        <item itemvalue="JUnit.UserManagementSystemTest" />
+        <item itemvalue="JUnit.UserManagementSystemTest.testSignUpWithValidInput" />
+        <item itemvalue="JUnit.UserManagementSystemTest.testLogoutWhenUserIsLoggedIn" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +151,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716271271897</updated>
-      <workItem from="1716271272974" duration="15734000" />
+      <workItem from="1716271272974" duration="17358000" />
+      <workItem from="1716336088189" duration="448000" />
+      <workItem from="1716346883217" duration="4167000" />
     </task>
     <servers />
   </component>
@@ -175,7 +181,22 @@
           <line>13</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/UserManagementSystemTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/UserManagementSystemTest.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.io.ByteArrayOutputStream" memberName="buf" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -1,4 +1,1 @@
 1716279848895,Niraj Mudbari,niraj@gmail.com,niraj,0422454544,STUDENT,Active
-1716298415444,Jane Doe,jane@example.com,password456,0987654321,LECTURER,Active
-1716298415463,John Doe,john@example.com,password123,1234567890,STUDENT,Active
-1716298415466,Charlie Green,charlie@example.com,password111,4455667788,STUDENT,Active
