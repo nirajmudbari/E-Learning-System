@@ -1,10 +1,18 @@
 package org.usermanagement.model;
 
+import org.assessmentmanagement.Admin;
+import org.assessmentmanagement.AssessmentManagement;
+import org.coursemanagement.CourseManagementSubsystem;
 import org.usermanagement.util.UniqueIdGenerator;
 import org.usermanagement.util.Pattern;
 
 import java.io.*;
 import java.util.*;
+
+import static org.assessmentmanagement.AssessmentManagement.finishQuiz;
+import static org.assessmentmanagement.AssessmentManagement.setPassingCriteriaForQuiz;
+import static org.coursemanagement.CourseManagementSubsystem.createAssignment;
+import static org.coursemanagement.CourseManagementSubsystem.viewAssignments;
 
 public class UserManagementSystem {
 
@@ -13,6 +21,9 @@ public class UserManagementSystem {
     private static UserManagementSystem instance;
     private Map<String, UserAccount> users;
     private File userFile;
+    private boolean adminLoggedIn = false;
+    private boolean lecturerLoggedIn = false;
+
 
     private UserManagementSystem() throws IOException {
         loggedInUser = null;
@@ -104,7 +115,15 @@ public class UserManagementSystem {
         String email = scanner.nextLine();
         System.out.print("Enter password: ");
         String password = scanner.nextLine();
-        if (users.containsKey(email)) {
+        if (email.equalsIgnoreCase("admin") & password.equals("admin")) {
+            adminLoggedIn = true;
+            System.out.println("Admin Login successful! Welcome to Admin Panel");
+
+//        } else if (email.equalsIgnoreCase("lecturer") & password.equals("lecturer")) {
+//            lecturerLoggedIn = true;
+//            System.out.println("Lecturer Login successful! Welcome to Lecturer Panel");
+
+        } else if (users.containsKey(email)) {
             UserAccount user = users.get(email);
             if (user.getUserStatus().equalsIgnoreCase("Inactive")) {
                 System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
@@ -112,9 +131,13 @@ public class UserManagementSystem {
                 System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
 
                 return false;
-            }
-            if (user.login(email, password)) {
+            } else if (user.login(email, password) && user.getRole().equals(UserRole.STUDENT)) {
                 loggedInUser = user;
+                Pattern.drawPattern();
+                System.out.println("Login successful! Welcome, " + user.getFullname() + "!");
+                return true;
+            } else if (user.login(email, password) && user.getRole().equals(UserRole.LECTURER)) {
+                lecturerLoggedIn = true;
                 Pattern.drawPattern();
                 System.out.println("Login successful! Welcome, " + user.getFullname() + "!");
                 return true;
@@ -130,7 +153,15 @@ public class UserManagementSystem {
 
     // Method to logout a user
     public void logout() {
-        if (loggedInUser != null) {
+        if (adminLoggedIn) {
+            adminLoggedIn = false;
+            System.out.println("Logged out successfully!");
+            System.out.println("-----      ----------          --------         ---------         ------");
+        } else if (lecturerLoggedIn) {
+            lecturerLoggedIn = false;
+            System.out.println("Logged out successfully!");
+            System.out.println("-----      ----------          --------         ---------         ------");
+        } else if (loggedInUser != null) {
             loggedInUser = null;
             System.out.println("Logged out successfully!");
             System.out.println("-----      ----------          --------         ---------         ------");
@@ -167,6 +198,7 @@ public class UserManagementSystem {
     // Method to save user to file
     private void saveUserToFile(UserAccount user) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(userFile, true))) {
+            writer.newLine();
             writer.write(user.getUserId() + "," + user.getFullname() + "," + user.getEmail() + "," + user.getPassword() + "," + user.getPhone() + "," + user.getRole() + "," + user.getUserStatus());
             writer.newLine();
         } catch (IOException e) {
@@ -235,11 +267,40 @@ public class UserManagementSystem {
 
     public void displayMenu() {
         Scanner scanner = new Scanner(System.in);
+        CourseManagementSubsystem courseManagementSubsystem = new CourseManagementSubsystem();
+        AssessmentManagement assessmentManagement = new AssessmentManagement();
+        Admin admin = Admin.getInstance();
 
         while (true) {
-            if (loggedInUser == null) {
+            if (adminLoggedIn) {
+                System.out.println("=======********** E-Learning System *********========");
+                System.out.println("1. Create Course");
+                System.out.println("2. Modify Course Details");
+                System.out.println("3. Enroll Student to Course");
+                System.out.println("4. Create Assignment");
+                System.out.println("5. View Assignments");
+                System.out.println("6. Extend Assignment Deadline");
+                System.out.println("7. Delete Assignment");
+                System.out.println("8. Track Student Progress");
+                System.out.println("9. Provide Feedback");
+                System.out.println("10. View All Courses");
+                System.out.println("11. View All Student Enrollments");
+                System.out.println("12. Logout");
+                System.out.println("13. Exit");
+            } else if (lecturerLoggedIn) {
+                System.out.println("=======********** E-Learning System *********========");
+                System.out.println("\n Lecturer Menu:");
+                System.out.println("1. Create Quiz");
+                System.out.println("2. Add Question to Quiz");
+                System.out.println("3. Set Instructions for Quiz");
+                System.out.println("4. Set Passing Criteria for Quiz");
+                System.out.println("5. Check Quiz Status");
+                System.out.println("6. Finish Quiz");
+                System.out.println("7. Assign Grades for Quiz");
+                System.out.println("8. Exit");
+            } else if (loggedInUser == null) {
                 // Menu options for when no user is logged in
-                System.out.println("=======********** WELCOME TO USER MANAGEMENT SUBSYSTEM *********========");
+                System.out.println("=======********** WELCOME TO E-Learning System *********========");
 
                 System.out.println("Please select an option from below to start your learning journey.");
 
@@ -249,6 +310,8 @@ public class UserManagementSystem {
                 System.out.println("4. Exit");
             } else {
                 // Menu options for when a user is logged in
+                System.out.println("=======********** E-Learning System *********========");
+
                 System.out.println("----------   Please select your choice  ------------");
                 System.out.println("1. Access Dashboard");
                 System.out.println("2. View Grades");
@@ -265,8 +328,107 @@ public class UserManagementSystem {
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
+            if (adminLoggedIn) {
+                switch (choice) {
+                    case 1:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.createCourse();
+                        }
+                        break;
+                    case 2:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.modifyCourse();
+                        }
+                        break;
+                    case 3:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.enrollStudent();
+                        }
+                        break;
+                    case 4:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.createAssignment();
+                        }
+                        break;
+                    case 5:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.viewAssignments();
+                        }
+                        break;
+                    case 6:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.extendDeadline();
+                        }
+                        break;
+                    case 7:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.deleteAssignment();
+                        }
+                        break;
+                    case 8:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.trackStudentProgress();
+                        }
+                        break;
+                    case 9:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.provideFeedback();
+                        }
+                        break;
+                    case 10:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.viewAllCourses();
+                        }
+                        break;
+                    case 11:
+                        if (adminLoggedIn) {
+                            courseManagementSubsystem.viewAllStudentEnrollments();
+                        }
+                        break;
+                    case 12:
+                        if (adminLoggedIn) {
+                            logout();
+                        }
+                        break;
+                    case 13:
+                        exit();
+                        break;
+                    default:
+                        System.out.println("Invalid choice.");
+                }
+            } else if (lecturerLoggedIn) {
+                // Handle menu options for when lecturer is logged in
+                switch (choice) {
+                    case 1:
+                        admin.createQuiz();
+                        break;
+                    case 2:
+                        assessmentManagement.addQuestionToQuiz();
+                        break;
+                    case 3:
+                        assessmentManagement.setInstructionsForQuiz();
+                        break;
+                    case 4:
+                        assessmentManagement.setPassingCriteriaForQuiz();
+                        break;
+                    case 5:
+                        assessmentManagement.checkQuizStatus();
+                        break;
+                    case 6:
+                        assessmentManagement.finishQuiz();
+                        break;
+                    case 7:
+                        assessmentManagement.assignGradesForQuiz();
+                        break;
+                    case 8:
 
-            if (loggedInUser == null) {
+                        System.out.println("Exiting...");
+                        exit();
+                        break;
+                    default:
+                        System.out.println("Invalid choice.");
+                }
+            } else if (loggedInUser == null) {
                 // Handle menu options for when no user is logged in
                 switch (choice) {
                     case 1:
@@ -285,7 +447,7 @@ public class UserManagementSystem {
                         System.out.println("Invalid choice. Please try again.");
                         break;
                 }
-            } else {
+            } else if (loggedInUser != null) {
                 // Handle menu options for when a user is logged in
                 switch (choice) {
                     case 1:
