@@ -489,6 +489,16 @@ public class UserManagementSystem {
         grade.getGradeByUser();
     }
 
+    private void submitAssignment(){
+        System.out.println("Enter course title to submit assignment: ");
+        Scanner scanner = new Scanner(System.in);
+        String title = scanner.nextLine();
+        System.out.println("Enter assignment number: ");
+        int assignmentNumber = scanner.nextInt();
+        System.out.println("Your assignment has been submitted for Course: "+ title+ " and of Assignment:"+assignmentNumber);
+    }
+
+
     private void getGradeByCourse() {
         Grade grade = new Grade();
         grade.getGradeByCourse();
@@ -522,14 +532,6 @@ public class UserManagementSystem {
         enrolment.manage();
     }
 
-    private void submitAssignment(){
-        System.out.println("Enter course title to submit assignment: ");
-        Scanner scanner = new Scanner(System.in);
-        String title = scanner.nextLine();
-        System.out.println("Enter assignment number: ");
-        int assignmentNumber = scanner.nextInt();
-        System.out.println("Your assignment has been submitted for Course: "+ title+ " and of Assignment:"+assignmentNumber);
-    }
 
 
 }
