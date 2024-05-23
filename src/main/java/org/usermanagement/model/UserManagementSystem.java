@@ -309,10 +309,11 @@ public class UserManagementSystem {
                 System.out.println("4. Make Payment");
                 System.out.println("5. Enrol in Course");
                 System.out.println("6. Drop Course");
-                System.out.println("7. Manage Enrolment");
-                System.out.println("8. Deactivate Account");
-                System.out.println("9. Logout");
-                System.out.println("10. Exit");
+                System.out.println("7. Submit Assignment");
+                System.out.println("8. Manage Enrolment");
+                System.out.println("9. Deactivate Account");
+                System.out.println("10. Logout");
+                System.out.println("11. Exit");
             }
 
             System.out.print("Enter your choice: ");
@@ -459,15 +460,18 @@ public class UserManagementSystem {
                         dropCourse();
                         break;
                     case 7:
-                        manageEnrolment();
+                        submitAssignment();
                         break;
                     case 8:
-                        deactivateAccount();
+                        manageEnrolment();
                         break;
                     case 9:
-                        logout();
+                        deactivateAccount();
                         break;
                     case 10:
+                        logout();
+                        break;
+                    case 11:
                         exit();
                         break;
                     default:
@@ -516,6 +520,15 @@ public class UserManagementSystem {
         System.out.println("Managing enrolment...");
         Enrolment enrolment = new Enrolment("E123", "C101", loggedInUser.getUserId(), new Date());
         enrolment.manage();
+    }
+
+    private void submitAssignment(){
+        System.out.println("Enter course title to submit assignment: ");
+        Scanner scanner = new Scanner(System.in);
+        String title = scanner.nextLine();
+        System.out.println("Enter assignment number: ");
+        int assignmentNumber = scanner.nextInt();
+        System.out.println("Your assignment has been submitted for Course: "+ title+ " and of Assignment:"+assignmentNumber);
     }
 
 
