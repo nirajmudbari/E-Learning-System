@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02103603-97d5-43d1-8d88-5e7e95da5eb9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/e-learning/CourseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +51,14 @@
     "JUnit.UserManagementSystemTest.testSignUpWithValidInput.executor": "Debug",
     "JUnit.UserTest (1).executor": "Run",
     "JUnit.UserTest.executor": "Run",
+    "JUnit.java in E-LearningSystem.executor": "Run",
     "JUnit.test in UserManagementSubsystem.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/niraa/OneDrive/Documents/Term 4/ITECH 7201/Final Assignment/E-Learning System/src/test/java",
     "last_opened_file_path": "C:/Users/niraa/OneDrive/Desktop/webjobconnectbackend-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -75,10 +79,10 @@
       <recent name="C:\Users\niraa\IdeaProjects\UserManagementSubsystem\src\main\java\org\usermanagement\interface" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.java in E-LearningSystem">
     <configuration name="AssessmentManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.assessmentmanagement.AssessmentManagement" />
-      <module name="UserManagementSubsystem" />
+      <module name="E-LearningSystem" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.assessmentmanagement.*" />
@@ -91,7 +95,7 @@
     </configuration>
     <configuration name="CourseManagementSubsystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.coursemanagement.CourseManagementSubsystem" />
-      <module name="UserManagementSubsystem" />
+      <module name="E-LearningSystem" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.coursemanagement.*" />
@@ -104,7 +108,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.usermanagement.Main" />
-      <module name="UserManagementSubsystem" />
+      <module name="E-LearningSystem" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.usermanagement.*" />
@@ -115,17 +119,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserManagementSystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UserManagementSubsystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserManagementSystemTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="java in E-LearningSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="E-LearningSystem" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="test in UserManagementSubsystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UserManagementSubsystem" />
+      <module name="E-LearningSystem" />
       <option name="TEST_OBJECT" value="directory" />
       <dir value="$PROJECT_DIR$/src/test" />
       <method v="2">
@@ -134,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.java in E-LearningSystem" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.test in UserManagementSubsystem" />
         <item itemvalue="Application.AssessmentManagement" />
         <item itemvalue="Application.CourseManagementSubsystem" />
-        <item itemvalue="JUnit.UserManagementSystemTest" />
       </list>
     </recent_temporary>
   </component>
