@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02103603-97d5-43d1-8d88-5e7e95da5eb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/assessmentmanagement/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/assessmentmanagement/AssessmentManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coursemanagement/CourseManagementSubsystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/usermanagement/model/UserManagementSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/coursemanagement/CourseManagementSubsystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/coursemanagement/CourseManagementSubsystem.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,40 +34,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.AssessmentManagement.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CourseManagementSubsystem.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EnrolmentTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GradeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GradeTest.testGetGradeByUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PaymentTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAccountTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserManagementSystemTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserManagementSystemTest.testLogoutWhenUserIsLoggedIn.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.UserManagementSystemTest.testSignUpWithValidInput.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.UserTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test in UserManagementSubsystem.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/niraa/OneDrive/Desktop/webjobconnectbackend-main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AssessmentManagement.executor": "Run",
+    "Application.CourseManagementSubsystem.executor": "Run",
+    "Application.Main.executor": "Run",
+    "JUnit.EnrolmentTest.executor": "Run",
+    "JUnit.GradeTest.executor": "Run",
+    "JUnit.GradeTest.testGetGradeByUser.executor": "Run",
+    "JUnit.PaymentTest.executor": "Run",
+    "JUnit.UserAccountTest.executor": "Run",
+    "JUnit.UserManagementSystemTest.executor": "Run",
+    "JUnit.UserManagementSystemTest.testLogoutWhenUserIsLoggedIn.executor": "Debug",
+    "JUnit.UserManagementSystemTest.testSignUpWithValidInput.executor": "Debug",
+    "JUnit.UserTest (1).executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "JUnit.test in UserManagementSubsystem.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/niraa/OneDrive/Desktop/webjobconnectbackend-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\niraa\IdeaProjects\UserManagementSubsystem\src\main\resources" />
