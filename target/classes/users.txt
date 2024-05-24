@@ -1,2 +1,4 @@
-1716279848895,Niraj Mudbari,niraj@gmail.com,niraj,0422454544,STUDENT,Active
-1716377062906,Rekha Bista,rekha@gmail.com,rekha,0445454545,LECTURER,Active
+
+1716538828534,Niraj Mudbari,niraj@gmail.com,niraj,0457858585,STUDENT,Active
+
+1716538855148,Arshdeep Kaur,arshdeep@gmail.com,arshdeep,041541545,LECTURER,Active

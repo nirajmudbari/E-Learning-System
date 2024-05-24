@@ -287,7 +287,8 @@ public class UserManagementSystem {
                 System.out.println("5. Check Quiz Status");
                 System.out.println("6. Finish Quiz");
                 System.out.println("7. Assign Grades for Quiz");
-                System.out.println("8. Exit");
+                System.out.println("8. Logout");
+                System.out.println("9. Exit");
             } else if (loggedInUser == null) {
                 // Menu options for when no user is logged in
                 System.out.println("=======********** WELCOME TO E-Learning System *********========");
@@ -412,6 +413,9 @@ public class UserManagementSystem {
                         assessmentManagement.assignGradesForQuiz();
                         break;
                     case 8:
+                        logout();
+                        break;
+                    case 9:
 
                         System.out.println("Exiting...");
                         exit();
